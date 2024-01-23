@@ -5,7 +5,17 @@ This Weather App is a web application that provides real-time weather informatio
 ## Installation
 
 1. Clone the repository to your local machine
-2. Install the required npm packages
+2. Create .env file and write this:
+```bash
+OPENWEATHER_API_KEY=YOUR_API_KEY
+
+GOOGLE_MAPS_API_KEY=YOUR_API_KEY
+```
+3. Insert YOUR_API_KEY (from the News API site)
+```bash
+const newsResponse = await axios.get("https://newsapi.org/v2/top-headlines?country=us&apiKey=YOUR_API_KEY");
+```
+4. Install the required npm packages
    ```bash
    npm install
    ```
