@@ -5,13 +5,13 @@ This Weather App is a web application that provides real-time weather informatio
 ## Installation
 
 1. Clone the repository to your local machine
-2. Create .env file and write this:
+2. Create .env file and write your API (from OpenWeatherApi (https://openweathermap.org/api) and GoogleMapsApi (tutorial: https://openweathermap.org/api):
    ```bash
    OPENWEATHER_API_KEY=YOUR_API_KEY
 
    GOOGLE_MAPS_API_KEY=YOUR_API_KEY
    ```
-3. Insert YOUR_API_KEY (from the News API site)
+3. Insert YOUR_API_KEY (from the News API (https://newsapi.org/) site)
    ```bash
    const newsResponse = await axios.get("https://newsapi.org/v2/top-headlines?country=us&apiKey=YOUR_API_KEY");
    ```
