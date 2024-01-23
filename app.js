@@ -85,7 +85,7 @@ app.get("/crypto", async function (req, res) {
 
 app.get("/news", async function (req, res) {
     try {
-        const newsResponse = await axios.get("https://newsapi.org/v2/top-headlines?country=us&apiKey=4fb91da1f2324d32aca6365cba5392f5");
+        const newsResponse = await axios.get("https://newsapi.org/v2/top-headlines?country=us&apiKey=YOUR_API_KEY");
         const newsData = newsResponse.data;
         res.json(newsData);
     } catch (error) {
