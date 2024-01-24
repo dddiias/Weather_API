@@ -1,22 +1,17 @@
-// app.js
 const express = require("express");
 const https = require("https");
 const request = require("request");
 const app = express();
 
-// app.js (продолжение)
 const cors = require("cors");
 app.use(cors());
 
 
-// Добавляем поддержку JSON и URL-encoded data
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Подключаем dotenv для безопасного хранения API ключей
 require("dotenv").config();
 
-// Разрешаем доступ к статическим файлам в папке public
 app.use(express.static("public"));
 
 // Главная страница
@@ -85,7 +80,7 @@ app.get("/crypto", async function (req, res) {
 
 app.get("/news", async function (req, res) {
     try {
-        const newsResponse = await axios.get("https://newsapi.org/v2/top-headlines?country=us&apiKey=YOUR_API_KEY");
+        const newsResponse = await axios.get("https://newsapi.org/v2/top-headlines?country=us&apiKey=4fb91da1f2324d32aca6365cba5392f5");
         const newsData = newsResponse.data;
         res.json(newsData);
     } catch (error) {
